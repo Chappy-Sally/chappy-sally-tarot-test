@@ -1,3 +1,6 @@
+const bossImageBase =
+  "https://raw.githubusercontent.com/Chappy-Sally/chappy-sally-images/main/lassboss/";
+
 const bossCards = [
   { name:"不安", file:"boss_anxiety.png" },
   { name:"執着", file:"boss_attachment.png" },
@@ -46,7 +49,7 @@ function showCards(labels){
     box.className = "mini-card";
 
     const img = document.createElement("img");
-    img.src = "images/" + card.file;
+    img.src = bossImageBase + card.file;
     img.alt = card.name;
 
     const label = document.createElement("div");
